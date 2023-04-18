@@ -1,0 +1,95 @@
+.page-container-resultados {
+  min-height: calc(100vh - 100px);
+}
+
+.tabla-resultados {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  height: 800px;
+  width: 100%;
+  align-items: center;
+}
+
+.bloque {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 80%;
+  overflow: auto;
+}
+
+thead {
+  color: white;
+}
+
+.fila-tabla {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: flex-start;
+  color: white;
+}
+
+.match {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  color: white;
+}
+
+.teams-matches {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.score {
+  color: white;
+}
+
+.cabezal {
+  color: white;
+}
+
+.tablas {
+  min-width: 80%;
+  height: 315px;
+}
+
+.elapsed {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: red;
+}
+
+.divisor {
+  width: 70%;
+  height: 1px;
+  background-color: white;
+}
+
+.logo-matches {
+  width: 50px;
+  height: 35px;
+  border-radius: 30%;
+}
+
+.logo-teams {
+  width: 25px;
+  height: 25px;
+}
+
+.bloque::-webkit-scrollbar {
+  display: none;
+}

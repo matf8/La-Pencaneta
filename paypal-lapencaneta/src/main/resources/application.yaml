@@ -1,0 +1,19 @@
+server:
+  port: 5000
+
+paypal:
+  mode: sandbox
+  client:
+    id: AaYN0Z9o8dsD7Un_9gNmXDn56jgZRKpsmt6CK3W3-oiHNTk_l5WWrzc-HkXdmjrg_RXKnOnMpK97otwk
+    secret: EArFuf-uTxrhyt94uY1ObdCpa95sXh_EMu5TWYoofEjnGi2tO_du9HSA-aHZNPCSO7rJMjdooU1QgRiy
+
+spring:   
+  data:
+    mongodb:
+      uri: mongodb+srv://m4thu8:roro10@cluster-eparticipation.inlmu.mongodb.net/?retryWrites=true&w=majority
+      database: LAPENCANETA
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  main:
+    allow-bean-definition-overriding: true

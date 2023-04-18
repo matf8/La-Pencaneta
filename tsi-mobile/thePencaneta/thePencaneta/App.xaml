@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thePencaneta.App">
+    
+    <Application.Resources>
+        <!-- COMO STYLES.CSS -->
+        <ResourceDictionary>
+            <!-- Pallete -->
+            <Color x:Key="navbarColor">#0b2c39</Color>
+            <Color x:Key="ButtonTextColor">White</Color>
+            <Color x:Key="TextColor">DimGray</Color>
+            <Color x:Key="PlaceholderColor">#E8C222</Color>
+            <Color x:Key="ButtonColor">#0b2c39</Color>
+            <Color x:Key="BorderButtonColor">DimGray</Color>
+            <Font x:Key="Maven">Maven</Font>
+
+            <!-- Pallete-end -->
+            <Style ApplyToDerivedTypes="true" TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Key=navbarColor}"/>
+                <Setter Property="BarTextColor" Value="{StaticResource Key=ButtonTextColor}"/>
+            </Style>
+            <Style ApplyToDerivedTypes="true" TargetType="Button">
+                <Setter Property="TextColor" Value="{StaticResource Key=ButtonTextColor}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource Key=ButtonColor}"/>
+                <Setter Property="BorderColor" Value="{StaticResource Key=BorderButtonColor}"/>
+                <Setter Property="FontFamily" Value="{StaticResource Key=Maven}"/>
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="WidthRequest" Value="160"/>
+            </Style>
+            <Style ApplyToDerivedTypes="true" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource Key=Maven}"/>
+            </Style>
+            <Style ApplyToDerivedTypes="true" TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="{StaticResource Key=TextColor}"/>
+            </Style>
+            
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
+

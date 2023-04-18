@@ -1,0 +1,24 @@
+.titulo-sidebar {
+    margin-top: 10px;
+    color: black;
+}
+
+.side-menu-logo-adminEmpresarial {
+    padding-top: 10px;
+    color: white;
+}
+
+.side-menu-logo:hover {
+    cursor: pointer;
+}
+
+.accion-sidebar-adminEmpresarial {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+.flechita-adminEmpresarial {
+    cursor: pointer;
+}

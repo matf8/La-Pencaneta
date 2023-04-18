@@ -1,0 +1,74 @@
+.page-container-terminar-eventos {
+  min-height: calc(100vh - 100px);
+}
+
+.contenido-terminar-eventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+}
+
+.cabezal-terminar-eventos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
+}
+
+.logo-equipos {
+  width: 25px;
+  height: 25px;
+}
+
+.cuerpo-terminar-eventos {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.cuerpo-terminar-eventos::-webkit-scrollbar {
+  display: none;
+}
+
+.evento-acciones {
+  color: black;
+}
+
+.evento-acciones:hover {
+  cursor: pointer;
+}
+
+.terminar-evento-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.terminar-evento {
+  cursor: pointer;
+}
+
+.boton-submit-resultado-evento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.terminar-evento-input {
+  width: 90%;
+}

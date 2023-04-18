@@ -1,0 +1,71 @@
+[
+    {
+        "fixture": {
+            "id": 976642,
+            "referee": "Szymon Marciniak, Poland",
+            "timezone": "UTC",
+            "date": "2022-12-03T19:00:00+00:00",
+            "timestamp": 1670094000,
+            "periods": {
+                "first": 1670094000,
+                "second": 1670097600
+            },
+            "venue": {
+                "id": null,
+                "name": "Ahmed bin Ali Stadium",
+                "city": "Al Rayyan"
+            },
+            "status": {
+                "long": "Second Half",
+                "short": "2H",
+                "elapsed": 90
+            }
+        },
+        "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022,
+            "round": "Round of 16"
+        },
+        "teams": {
+            "home": {
+                "id": 26,
+                "name": "Argentina",
+                "logo": "https://media.api-sports.io/football/teams/26.png",
+                "winner": true
+            },
+            "away": {
+                "id": 20,
+                "name": "Australia",
+                "logo": "https://media.api-sports.io/football/teams/20.png",
+                "winner": false
+            }
+        },
+        "goals": {
+            "home": 2,
+            "away": 1
+        },
+        "score": {
+            "halftime": {
+                "home": 1,
+                "away": 0
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "events": []
+    }
+]

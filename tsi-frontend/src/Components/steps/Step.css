@@ -1,0 +1,174 @@
+.torneo-alta-penca {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 700px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-precio-entrada {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nombre-alta-penca {
+    width: 400px;
+    margin-bottom: 50px;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+.opciones {
+    background-color: white;
+}
+
+.dropdown-torneo-alta-penca {
+    width: 110px;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.dropdown-torneo-alta-penca:hover {
+    cursor: pointer;
+}
+
+.form-grupo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.form-grupo-dos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.tipo-penca-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 180px;
+    width: 50%;
+}
+
+#tipoPenca {
+    width: 50%;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.info-adicional-penca {
+    display: flex;
+    align-items: center;
+    height: 210px;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(184, 190, 231);
+}
+
+.planes-penca {
+    display: flex;
+    align-items: center;
+    height: 180px;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(124, 140, 230);
+}
+
+.titulo-planes-pencas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.opciones-planes-pencas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-plan-alta-penca {
+    width: 150px;
+    border-radius: 5px;
+    background-color: #E8FF2B;
+    font-weight: bold;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.campo-tema {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tema-eleccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.info-tema {
+    cursor: pointer;
+}
+
+.dropdown-plan-alta-penca:hover {
+    cursor: pointer;
+}
+
+#tipoEmpresarial {
+    display: none;
+}
+
+#tipoPublica {
+    display: none;
+}
+
+.logo-paypal {
+    width: 300px;
+    height: 150px;
+}
+
+.pass-penca-empresarial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo-empresa {
+    width: 44%;
+    margin-left: 3%;
+    margin-right: 3%;
+}

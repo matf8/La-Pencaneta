@@ -1,0 +1,274 @@
+[
+    {
+        "fixture": {
+            "id": 946929,
+            "referee": "Daniele Orsato, Italy",
+            "timezone": "UTC",
+            "date": "2022-11-01T17:45:00+00:00",
+            "timestamp": 1667324700,
+            "periods": {
+                "first": 1667324700,
+                "second": null
+            },
+            "venue": {
+                "id": 1286,
+                "name": "Estádio Do Dragão",
+                "city": "Porto"
+            },
+            "status": {
+                "long": "First Half",
+                "short": "1H",
+                "elapsed": 45
+            }
+        },
+        "league": {
+            "id": 2,
+            "name": "UEFA Champions League",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/2.png",
+            "flag": null,
+            "season": 2022,
+            "round": "Group B - 6"
+        },
+        "teams": {
+            "home": {
+                "id": 212,
+                "name": "FC Porto",
+                "logo": "https://media.api-sports.io/football/teams/212.png",
+                "winner": true
+            },
+            "away": {
+                "id": 530,
+                "name": "Atletico Madrid",
+                "logo": "https://media.api-sports.io/football/teams/530.png",
+                "winner": false
+            }
+        },
+        "goals": {
+            "home": 2,
+            "away": 0
+        },
+        "score": {
+            "halftime": {
+                "home": 2,
+                "away": 0
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "events": [
+            {
+                "time": {
+                    "elapsed": 5,
+                    "extra": null
+                },
+                "team": {
+                    "id": 212,
+                    "name": "FC Porto",
+                    "logo": "https://media.api-sports.io/football/teams/212.png"
+                },
+                "player": {
+                    "id": 42315,
+                    "name": "M. Taremi"
+                },
+                "assist": {
+                    "id": 152856,
+                    "name": "Evanilson"
+                },
+                "type": "Goal",
+                "detail": "Normal Goal",
+                "comments": null
+            },
+            {
+                "time": {
+                    "elapsed": 24,
+                    "extra": null
+                },
+                "team": {
+                    "id": 212,
+                    "name": "FC Porto",
+                    "logo": "https://media.api-sports.io/football/teams/212.png"
+                },
+                "player": {
+                    "id": 35570,
+                    "name": "S. Eustaquio"
+                },
+                "assist": {
+                    "id": 41197,
+                    "name": "Galeno"
+                },
+                "type": "Goal",
+                "detail": "Normal Goal",
+                "comments": null
+            },
+            {
+                "time": {
+                    "elapsed": 39,
+                    "extra": null
+                },
+                "team": {
+                    "id": 212,
+                    "name": "FC Porto",
+                    "logo": "https://media.api-sports.io/football/teams/212.png"
+                },
+                "player": {
+                    "id": 25350,
+                    "name": "M. Grujic"
+                },
+                "assist": {
+                    "id": null,
+                    "name": null
+                },
+                "type": "Card",
+                "detail": "Yellow Card",
+                "comments": "Elbowing"
+            },
+            {
+                "time": {
+                    "elapsed": 42,
+                    "extra": null
+                },
+                "team": {
+                    "id": 530,
+                    "name": "Atletico Madrid",
+                    "logo": "https://media.api-sports.io/football/teams/530.png"
+                },
+                "player": {
+                    "id": 22225,
+                    "name": "R. Mandava"
+                },
+                "assist": {
+                    "id": null,
+                    "name": null
+                },
+                "type": "Card",
+                "detail": "Yellow Card",
+                "comments": "Tripping"
+            }
+        ]
+    },
+    {
+        "fixture": {
+            "id": 946930,
+            "referee": "Maurizio Mariani, Italy",
+            "timezone": "UTC",
+            "date": "2022-11-01T17:45:00+00:00",
+            "timestamp": 1667324700,
+            "periods": {
+                "first": 1667324700,
+                "second": null
+            },
+            "venue": {
+                "id": 699,
+                "name": "BayArena",
+                "city": "Leverkusen"
+            },
+            "status": {
+                "long": "First Half",
+                "short": "1H",
+                "elapsed": 45
+            }
+        },
+        "league": {
+            "id": 2,
+            "name": "UEFA Champions League",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/2.png",
+            "flag": null,
+            "season": 2022,
+            "round": "Group B - 6"
+        },
+        "teams": {
+            "home": {
+                "id": 168,
+                "name": "Bayer Leverkusen",
+                "logo": "https://media.api-sports.io/football/teams/168.png",
+                "winner": null
+            },
+            "away": {
+                "id": 569,
+                "name": "Club Brugge KV",
+                "logo": "https://media.api-sports.io/football/teams/569.png",
+                "winner": null
+            }
+        },
+        "goals": {
+            "home": 0,
+            "away": 0
+        },
+        "score": {
+            "halftime": {
+                "home": 0,
+                "away": 0
+            },
+            "fulltime": {
+                "home": null,
+                "away": null
+            },
+            "extratime": {
+                "home": null,
+                "away": null
+            },
+            "penalty": {
+                "home": null,
+                "away": null
+            }
+        },
+        "events": [
+            {
+                "time": {
+                    "elapsed": 37,
+                    "extra": null
+                },
+                "team": {
+                    "id": 569,
+                    "name": "Club Brugge KV",
+                    "logo": "https://media.api-sports.io/football/teams/569.png"
+                },
+                "player": {
+                    "id": 2259,
+                    "name": "E. Sobol"
+                },
+                "assist": {
+                    "id": null,
+                    "name": null
+                },
+                "type": "Card",
+                "detail": "Yellow Card",
+                "comments": "Tripping"
+            },
+            {
+                "time": {
+                    "elapsed": 43,
+                    "extra": null
+                },
+                "team": {
+                    "id": 168,
+                    "name": "Bayer Leverkusen",
+                    "logo": "https://media.api-sports.io/football/teams/168.png"
+                },
+                "player": {
+                    "id": 6002,
+                    "name": "E. Palacios"
+                },
+                "assist": {
+                    "id": null,
+                    "name": null
+                },
+                "type": "Card",
+                "detail": "Yellow Card",
+                "comments": "Tripping"
+            }
+        ]
+    }
+]

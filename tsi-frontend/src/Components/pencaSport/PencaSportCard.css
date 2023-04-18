@@ -1,0 +1,17 @@
+.cartaPencaSport {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 14rem;
+  border-radius: 10px;
+  border-width: 5px;
+}
+
+.cardButton:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .cartaPencaSport {
+    width: 12rem;
+  }
+}

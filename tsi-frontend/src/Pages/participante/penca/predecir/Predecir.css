@@ -1,0 +1,95 @@
+.page-container-predecir {
+  min-height: calc(100vh - 100px);
+}
+
+.predecir-participante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 800px;
+}
+
+.predecir-partido-participante {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  width: 100%;
+}
+
+.prediccion-partido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+
+.equipos-partido {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.puntaje {
+  width: 20%;
+}
+
+.logo-partido {
+  width: 35%;
+  height: 60%;
+  border-radius: 30%;
+}
+
+.tiempo {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: red;
+}
+
+.info-partido-participante {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  justify-content: space-between;
+  height: 74%;
+  width: 100%;
+}
+
+.info-partido-predecir-participante {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.info-partido {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-equipo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}

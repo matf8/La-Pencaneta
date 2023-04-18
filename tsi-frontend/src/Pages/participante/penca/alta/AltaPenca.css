@@ -1,0 +1,163 @@
+.titulo-form-alta-penca {
+  color: black;
+}
+
+.page-container-home-alta-penca {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 20px;
+  height: 450px;
+}
+
+.containerAlta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 5px;
+  height: 400px;
+  width: 700px;
+}
+
+.header-alta-penca {
+  display: flex;
+  justify-content: center;
+}
+
+.frase-alta-penca {
+  display: flex;
+  justify-content: center;
+  height: 335px;
+}
+
+.tabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 370px;
+  height: 400px;
+  color: white;
+  border-radius: 10px;
+  background-color: #ff8a17;
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.planes-pencas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  width: 350px;
+}
+
+.planes-precios-pencas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.planes-premios-pencas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.plan-penca {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.plan-premios {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.descripcion-plan {
+  display: flex;
+  flex-direction: column;
+}
+
+.descripcion-precios {
+  display: flex;
+  flex-direction: column;
+}
+
+.premios-pencas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 200px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: row;
+}
+
+.lamparita {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.ayuda {
+  display: flex;
+  flex-direction: column;
+}
+
+.elementos-alta-penca {
+  display: flex;
+  flex-direction: column;
+}
+
+.superior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1440px) {
+  .formulario {
+    justify-content: space-between;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .formulario {
+    display: block;
+  }
+  .tabla {
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 4%;
+    height: 80%;
+  }
+  .containerAlta {
+    margin-left: 14.5%;
+  }
+}

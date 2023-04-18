@@ -1,0 +1,23 @@
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    border-radius: 10px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.boton-siguiente {
+    margin-left: 5px;
+}
+
+.boton-anterior {
+    margin-right: 5px;
+}
+
+.header-alta-penca {
+    height: 40px;
+}
+
+@media screen and (max-width: 1440px) {
+}

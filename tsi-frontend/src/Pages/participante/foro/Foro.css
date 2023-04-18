@@ -1,0 +1,46 @@
+.page-container-foro {
+    min-height: calc(100vh - 100px);
+}
+
+.foro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - 150px);
+    width: 100%;
+}
+
+.cabezal-foro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 15%;
+}
+
+.boton-nuevo-tema {
+    margin-left: 50px;
+}
+
+.contenido-foro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 85%;
+    width: 100%;
+    overflow: auto;
+}
+
+.contenido-foro::-webkit-scrollbar {
+    display: none;
+}
+
+.tema {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

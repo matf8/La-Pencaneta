@@ -1,0 +1,67 @@
+.carta-tema {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carta-tema-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardButton:hover {
+  cursor: pointer;
+}
+
+.cardButton {
+  margin-top: 10px;
+}
+
+.campo-comentario {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.input-comentario {
+  width: 90%;
+  height: 100%;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.boton-comentar {
+  width: 10%;
+}
+
+.contenido-tema {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.foto-comentar {
+  border-radius: 50%;
+  width: 4%;
+}
+
+.header-tema-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acciones-tema-card {
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titulo-tema {
+  margin-right: 10px;
+}

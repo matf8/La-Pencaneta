@@ -1,0 +1,92 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 50px);
+}
+
+.contentLogin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 800px;
+  height: 400px;
+  background-color: #ff8a17;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-login {
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+.loginText {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.loginInput {
+  width: 90%;
+}
+
+.loginInput:focus {
+  box-shadow: 0 0 0 0.25rem rgba(232, 113, 33, 0.25);
+}
+
+.form-floating {
+  margin-bottom: 10px;
+}
+
+.submitLogin {
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+  background-color: #4bc4e9;
+  border: none;
+  margin-top: 20px;
+}
+
+.submitLogin:focus {
+  box-shadow: 0 0 0 0.25rem #2e778d;
+  background-color: #4bc4e9;
+}
+
+.submitLogin:hover {
+  background-color: #2e778d;
+}
+
+.submitLogin:active {
+  background-color: #2e778d;
+}
+
+.inputsLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
+}
+
+.botones-submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  width: 250px;
+  height: 50px;
+  align-items: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .contentLogin {
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+}

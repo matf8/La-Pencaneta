@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="thePencaneta.SignUp">
+
+    <StackLayout Padding="16">
+
+        <Image Source="reg.png" WidthRequest="200" HeightRequest="200" />
+
+        <Entry
+            x:Name="entName"
+            Placeholder="Nombre"
+            Text="{Binding Nombre.Value, Mode=TwoWay}"
+            Unfocused="entName_Unfocused" />
+        <Label
+            HorizontalTextAlignment="Center"
+            Text="{Binding Nombre.Error}"
+            TextColor="Red" />
+        
+        <Entry
+            x:Name="entApellido"
+            Placeholder="Apellido"
+            Text="{Binding Apellido.Value, Mode=TwoWay}" />       
+
+        <Entry
+            x:Name="entMail"
+            Placeholder="Correo"
+            Text="{Binding Correo.Value, Mode=TwoWay}"
+            Unfocused="entMail_Unfocused" />
+        <Label
+            HorizontalTextAlignment="Center"
+            Text="{Binding Correo.Error}"
+            TextColor="Red" />
+
+        <Entry
+            x:Name="entPass"
+            Placeholder="Password"
+            IsPassword="True"         
+            Text="{Binding Password.Value, Mode=TwoWay}"
+            Unfocused="entPass_Unfocused" />        
+        <Label
+            HorizontalTextAlignment="Center"
+            Text="{Binding Password.Error}"
+            TextColor="Red" />
+
+        <Label HorizontalTextAlignment="Start" Text="Fecha de nacimiento"/>
+        <DatePicker x:Name="fnac" Format="yyyy-MM-dd"/>
+        <Button Clicked="RegistrarClicked" Margin="0, 10, 0, 0" Text="Registrar" />
+
+    </StackLayout>
+
+</ContentPage>

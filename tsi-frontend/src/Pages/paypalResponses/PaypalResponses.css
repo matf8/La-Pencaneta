@@ -1,0 +1,29 @@
+.page-container-result-paypal {
+    min-height: calc(100vh - 100px);
+}
+
+.contenido-respuesta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.imagen-paypal {
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contenedor-imagen-paypal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+}
+
+.home-button-paypal {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,13 @@
+#footer {
+  position: fixed;
+  margin-left: 15%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  bottom: 0%;
+  width: 70%;
+  height: 50px;
+  /* Height of the footer */
+  background-color: #ff8a17;
+  font-family: "Poppins", sans-serif;
+  color: #f2f2f2;
+}

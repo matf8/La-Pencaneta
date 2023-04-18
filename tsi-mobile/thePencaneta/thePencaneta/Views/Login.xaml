@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="thePencaneta.Login"
+    Title="Ingresar a LA PENCANETA">    
+
+    <StackLayout Padding="16">
+
+        <Image Source="LP1.png" WidthRequest="200" HeightRequest="250" VerticalOptions="Start" />
+
+        <StackLayout Padding="16" VerticalOptions="CenterAndExpand" >
+            <Entry
+                x:Name="entUser"
+                Placeholder="Correo"
+                PlaceholderColor="DarkSlateGray"
+                Unfocused="entCorreo_Unfocused"                 
+                Text="{Binding email.Value, Mode=TwoWay}"
+                Completed="FocusNext"/>
+            <Label
+                HorizontalTextAlignment="Center"
+                Text="{Binding email.Error}"
+                TextColor="Red" />
+
+            <Entry
+                x:Name="entPass"
+                Placeholder="Password"
+                IsPassword="True"
+                PlaceholderColor="DarkSlateGray"
+                Text="{Binding password.Value, Mode=TwoWay}"
+                Completed="LoginClicked"/>
+        </StackLayout>
+
+            <Grid>
+                <Button Clicked="LoginClicked" Text="Entrar" FontFamily="Maven" HorizontalOptions="CenterAndExpand" Margin="10"/>
+
+                <Image Source="login.png"
+                       HorizontalOptions="Center" HeightRequest="40"
+                       VerticalOptions="CenterAndExpand" Margin="120,0,0,0" />
+            </Grid>
+        
+        <Label Text="2022 @ CMNM" TextColor="DarkSlateGray" FontFamily="Maven" HorizontalOptions="Center" VerticalOptions="EndAndExpand"/>
+
+    </StackLayout>
+
+</ContentPage>

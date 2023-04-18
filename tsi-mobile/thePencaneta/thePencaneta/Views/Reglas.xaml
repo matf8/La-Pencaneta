@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thePencaneta.Reglas"
+             Title="FAQ">
+
+
+    <RelativeLayout>
+
+        <Image Source="bgwakanda.png" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                 Margin="0,-2,-2,0"  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+
+
+        <StackLayout Margin="5" Padding="5">
+            <Frame BackgroundColor="White" BorderColor="Gold" Margin="5" Padding="5">
+                <Grid RowSpacing="2" Padding="20, 0, 20, 20">
+                    <Label Text="• Reglas" TextColor="Black" FontSize="32" Padding="10" Grid.Row="0"/>
+                    <Label FontSize="Body" FontFamily="Maven" TextColor="Black" Grid.Row="1" Text="➊ Los puntos son calculados con el resultado al terminar el segundo tiempo. No incluye prórroga ni penales."/>
+                    <Label FontSize="Body" FontFamily="Maven" TextColor="Black" Grid.Row="2" Text="➋ En caso de que usuarios empaten en puntos, ganará el que haya acertado mayor cantidad de resultados exactos."/>
+                    <Label FontSize="Body" FontFamily="Maven" TextColor="Black" Grid.Row="3" Text="➌ El Ranking de cada penca será actualizado minutos después de finalizar el partido. El pronóstico puede ser ingresado hasta antes del comienzo de cada partido."/>
+                </Grid>
+            </Frame>
+      
+            <Frame BackgroundColor="White" BorderColor="Gold" Margin="5" Padding="5">
+                
+                    <Grid RowSpacing="1" Padding="20, 0, 20, 20">
+                        <Label Text="• Puntajes" TextColor="Black" FontSize="32" Padding="10" Grid.Row="0"/>
+                        <Label FontSize="Body" FontFamily="Maven" TextColor="Black" Grid.Row="1" Text="‣ 8 PUNTOS por acertar el resultado exacto." Margin="0,0,0,-5"/>
+                        <Label FontSize="Body" FontFamily="Maven" TextColor="Black" Grid.Row="2" Text="‣ 5 PUNTOS por acertar ganador y diferencia de goles."/>
+                        <Label FontSize="Body" FontFamily="Maven" TextColor="Black" Grid.Row="3" Text="‣ 3 PUNTOS por acertar el equipo ganador o empate."/>
+                    </Grid>
+              
+                
+            </Frame>
+        </StackLayout>
+
+    </RelativeLayout>
+
+</ContentPage>

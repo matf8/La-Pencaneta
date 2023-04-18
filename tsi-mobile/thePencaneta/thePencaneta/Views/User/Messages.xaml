@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thePencaneta.Messages"
+            xmlns:viewModel="clr-namespace:thePencaneta.ViewModels;assembly=thePencaneta">
+
+    <ContentPage.BindingContext>
+        <viewModel:MessageViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="*"
+          Margin="10">
+            <ListView ItemsSource="{Binding MessagesList}"
+                  SeparatorVisibility="None"
+                  HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid RowDefinitions="auto">
+                                <Grid ColumnDefinitions="*">
+                                    <Label Text="{Binding From}"/>
+                                    <Frame CornerRadius="30"
+                                       Grid.Column="1"
+                                       HorizontalOptions="End"
+                                       HasShadow="True"
+                                       Margin="0"
+                                       BackgroundColor="navy"
+                                       Padding="10">
+                                        <Label Text="{Binding Message}"
+                                           Margin="10"
+                                           TextColor="{StaticResource WhiteColor}"
+                                           LineBreakMode="WordWrap"/>
+                                    </Frame>
+                                </Grid>                                
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

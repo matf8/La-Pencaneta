@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thePencaneta.EventList"
+             xmlns:local="clr-namespace:thePencaneta"
+             xmlns:view="clr-namespace:thePencaneta;assembly=thePencaneta"
+             xmlns:viewModel="clr-namespace:thePencaneta.ViewModels;assembly=thePencaneta">
+
+    <ContentPage.BindingContext>
+        <viewModel:CardDataViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:Converter64 x:Key="Converter64" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+            
+            <Label
+                VerticalOptions="Start"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                BackgroundColor="Transparent"
+                FontFamily="Maven"
+                HorizontalOptions="CenterAndExpand" 
+                Text="Eventos"
+            />
+
+            <ListView x:Name="eventos" SelectedItem="{Binding SelectedItem,Mode=TwoWay}" ItemTapped="VerEvent" RowHeight="150" ItemsSource="{Binding CardDataCollection}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <view:CardView/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>  
+    
+</ContentPage>

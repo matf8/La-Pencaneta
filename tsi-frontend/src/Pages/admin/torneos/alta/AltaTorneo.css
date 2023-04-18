@@ -1,0 +1,37 @@
+.page-container-alta-torneo {
+  min-height: calc(100vh - 100px);
+}
+
+.contenido-alta-torneo {
+  display: flex;
+  height: 700px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.alta-torneo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px #000;
+  height: 50%;
+  width: 30%;
+  padding: 30px;
+  background-color: #ff8a17;
+}
+
+.header-alta-torneo {
+  display: flex;
+  border-radius: 50%;
+  width: 100%;
+  justify-content: center;
+}
+
+.boton-alta-torneo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}

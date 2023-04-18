@@ -1,0 +1,26 @@
+.pencaListadoCard {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 14rem;
+    border-radius: 10px;
+    border-width: 5px;
+    /*     border-color: #7223cc; */
+}
+
+.card-listado-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cardButton:hover {
+    cursor: pointer;
+}
+
+.card-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 30px;
+}

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thePencaneta.PencaDetail"
+             Title="Detalles">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="addTb"
+                     IconImageSource="add.png"
+                     Priority="1"
+                     Order="Primary"
+                     Clicked="AgregarEvent"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+        <RelativeLayout>
+
+            <Image Source="bgwakanda.png" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                 Margin="0,-2,-2,0"  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+
+            <ScrollView>
+                <StackLayout Padding="10">                    
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Id:" HorizontalOptions="Start" FontFamily="Maven" Margin="10" FontSize="Medium" TextColor="White" />
+                        <Label x:Name="lbPencaId" HorizontalOptions="Start" Margin="0,8,15,0" FontFamily="Maven" FontSize="20" TextColor="White"  />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Nombre:" FontFamily="Maven" HorizontalOptions="Start" Margin="10" TextColor="White" FontSize="Medium" />
+                        <Label x:Name="lbPencaNombre" FontFamily="Maven" HorizontalOptions="Start" Margin="0,12,15,0" TextColor="White" FontSize="Medium" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,15,0,20">
+                        <Button Text="Ver Eventos deportivos" Clicked="GoEvents" Margin="10" />
+
+                        <Button Text="Ver ranking" Clicked="ToggleRanking" Margin="10"/>
+                    </StackLayout>
+
+                    <StackLayout x:Name="rankingGrid" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,0,0,20" IsVisible="false">
+                        <Label Text="Posiciones de la penca" FontFamily="Maven" FontSize="23" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" Padding="10"/>
+
+                        <Grid ColumnSpacing="5" RowSpacing="1" BackgroundColor="Transparent" HeightRequest="30" ColumnDefinitions="*, *, *">
+                            <Label Text="Posición" Grid.Column="0" FontFamily="Maven" FontSize="Medium" TextColor="White" />
+                            <Label Text="Puntos" Grid.Column="1" FontFamily="Maven" FontSize="Medium" TextColor="White" />
+                            <Label Text="Participante" Grid.Column="2" FontFamily="Maven" FontSize="Medium" TextColor="White" />
+                        </Grid>
+
+                        <StackLayout Margin="20" >
+                            <CollectionView x:Name="ranking" ItemsLayout="VerticalGrid, 1" >
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout>
+                                            <Frame BorderColor="Navy" CornerRadius="5" BackgroundColor="White"
+                                             HasShadow="True" Padding="0" Margin="10" 
+                                             HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"
+                                             HeightRequest="75">
+                                                <Grid ColumnDefinitions="*, *, *" WidthRequest="350">
+                                                    <Label Text="{Binding Posicion}" x:Name="lbPbosicion" FontSize="14" Grid.Column="0" FontFamily="Maven" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                                                    <Label Text="{Binding Puntos}" x:Name="lbPuntos" Grid.Column="1" FontSize="14" FontFamily="Maven" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
+                                                    <Label Text="{Binding Participante}" x:Name="lbParticipante" Grid.Column="2" FontFamily="Maven" FontSize="14" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
+                                                </Grid>
+                                            </Frame>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>            
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

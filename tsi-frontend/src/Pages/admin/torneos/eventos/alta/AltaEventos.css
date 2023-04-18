@@ -1,0 +1,54 @@
+.page-container-alta-eventos {
+  min-height: calc(100vh - 100px);
+}
+
+.contenido-alta-eventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+}
+
+.cabezal-alta-eventos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
+}
+
+.logo-equipos {
+  width: 25px;
+  height: 25px;
+}
+
+.boton-ver-eventos {
+  margin-left: 50px;
+}
+
+.cuerpo-alta-eventos {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.cuerpo-alta-eventos::-webkit-scrollbar {
+  display: none;
+}
+
+.evento-acciones:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .cuerpo-alta-eventos {
+    height: 60%;
+  }
+}

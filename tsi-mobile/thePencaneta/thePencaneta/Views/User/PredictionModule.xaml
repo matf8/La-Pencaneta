@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thePencaneta.PredictionModule"
+             Title="Predicciones">
+    
+     <RelativeLayout>
+          
+            <Image Source="bgwakanda.png" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                 Margin="0,-2,-2,0"  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="50,5,0,0">
+
+            <Frame HeightRequest="335" WidthRequest="280" BackgroundColor="White" Padding="0" HasShadow="True" Margin="10" BorderColor="GhostWhite" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" >
+            <Grid>
+                <StackLayout BackgroundColor="Black"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="FillAndExpand"                             >
+                        <Image Source="fut.png"  Aspect="AspectFill" Opacity="0.7" HeightRequest="335" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="HandleVerEventos"
+                                    NumberOfTapsRequired="1">
+                                </TapGestureRecognizer>
+                            </Image.GestureRecognizers>
+                        </Image>
+                </StackLayout>
+                    <Label Text="Eventos deportivos" FontSize="28" FontFamily="Maven" VerticalOptions="EndAndExpand" FontAttributes="Bold" TextColor="White" Margin="15" Grid.Column="0" HorizontalTextAlignment="Center"/>
+            </Grid>                                
+        </Frame>
+
+        <Frame HeightRequest="335" WidthRequest="280" BackgroundColor="White" Padding="0" HasShadow="True" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+            <Grid>
+                <StackLayout BackgroundColor="Black" VerticalOptions="StartAndExpand"
+                    HorizontalOptions="FillAndExpand" >
+                    <Image Source="predecirPlaceholder.png" Aspect="AspectFill" Opacity="0.7" HeightRequest="335">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="HandleMisPredicciones"
+                                NumberOfTapsRequired="1">
+                            </TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>               
+                </StackLayout>
+                    <Label Text="Mis predicciones" FontSize="30" FontFamily="Maven" VerticalOptions="EndAndExpand" FontAttributes="Bold" TextColor="White" Margin="15" Grid.Column="0" HorizontalTextAlignment="Center"/>
+            </Grid>
+        </Frame>
+        </StackLayout>
+    </RelativeLayout>
+    
+</ContentPage>

@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #ff8a17;
+  height: 50px;
+}
+
+.navbar-collapse {
+  background-color: #ff8a17;
+  text-align: right;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("https://icons.veryicon.com/png/o/food--drinks/food-series-1/hamburger-46.png");
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-family: "Maven Pro";
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  color: rgb(255, 255, 255);
+  font-family: "Maven Pro";
+  margin-left: 10px;
+}
+
+.titulo-header-invitado {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    margin-right: 1%;
+  }
+}
+
+.androidLogo {
+  color: black;
+}
+
+.androidLogo:hover {
+  color: white;
+}

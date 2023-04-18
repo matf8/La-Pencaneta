@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+    x:Class="thePencaneta.Prediction">
+
+    <ContentPage.Content>
+        
+        <RelativeLayout>
+
+            <Image Source="bgwakanda.png" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                Aspect="AspectFill" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+
+            <StackLayout Margin="20" RelativeLayout.XConstraint="20"
+                 RelativeLayout.YConstraint="90">
+
+                <Frame CornerRadius="15" RelativeLayout.WidthConstraint="250" RelativeLayout.HeightConstraint="100" Padding="10" BorderColor="Blue" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+                    <StackLayout>
+
+                        <Label FontFamily="Maven" FontSize="20" TextColor="#0b2c39" Text="Ingrese su predicción por favor"  HorizontalTextAlignment="Center" />
+                        <Grid VerticalOptions="CenterAndExpand"
+                            Padding="0"
+                            HorizontalOptions="FillAndExpand"
+                            BackgroundColor="Transparent">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="1">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                    <controls:CircleImage x:Name="imgA" VerticalOptions="Start" HeightRequest="50" WidthRequest="80"/>
+                                    <Label x:Name="match" Margin="10" FontFamily="Maven" FontSize="17" HorizontalTextAlignment="Center" />
+                                    <controls:CircleImage x:Name="imgB" VerticalOptions="Start" HeightRequest="50" WidthRequest="80"/>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+
+                        <Entry Placeholder="Score Local" Margin="10" x:Name="scoreLocal" Text="{Binding ScoreA.Value, Mode=TwoWay}" Unfocused="scoreAUnfocused"/>
+                        <Label
+                            HorizontalTextAlignment="Center"
+                            Text="{Binding ScoreA.Error}"
+                            TextColor="Red" />
+
+                        <Entry Placeholder="Score Visitante" x:Name="scoreVisita" Margin="10" Text="{Binding ScoreB.Value, Mode=TwoWay}" Unfocused="scoreBUnfocused" Completed="PredecirClicked"/>
+                        <Label
+                            HorizontalTextAlignment="Center"
+                            Text="{Binding ScoreB.Error}"
+                            TextColor="Red" />
+            
+                        <Label Text="Podrá cambiar su predicción hasta que comience el partido." FontSize="12" VerticalOptions="EndAndExpand" FontAttributes="Bold" TextColor="MediumVioletRed" Margin="15" HorizontalTextAlignment="Center"/>
+
+                        <Button Clicked="PredecirClicked" Text="Ingresar predicción" HorizontalOptions="CenterAndExpand" FontFamily="Maven" Margin="10"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

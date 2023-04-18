@@ -1,0 +1,72 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: calc(100vh - 50px);
+}
+
+.contentRegistro {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 80%;
+  background-color: #ff8a17;
+  padding: 30px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px #000;
+  text-align: center;
+}
+
+.frase {
+  display: flex;
+  justify-content: center;
+  height: 335px;
+}
+
+.form-registro {
+  display: flex;
+  flex-direction: column;
+  height: 225px;
+}
+
+.titulo-registro {
+  margin-bottom: 20px;
+}
+
+.inputs-registro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.submitRegistro {
+  margin-top: 15px;
+}
+
+.submitRegistro {
+  color: rgb(0, 0, 0);
+  background-color: #4bc4e9;
+  border: none;
+}
+
+.submitRegistro:focus {
+  box-shadow: 0 0 0 0.25rem #2e778d;
+  background-color: #4bc4e9;
+}
+
+.submitRegistro:hover {
+  background-color: #2e778d;
+}
+
+.submitRegistro:active {
+  background-color: #2e778d;
+}
+
+@media screen and (max-width: 1440px) {
+  .contentRegistro {
+    margin-bottom: 10%;
+  }
+}

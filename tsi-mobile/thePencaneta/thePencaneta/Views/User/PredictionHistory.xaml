@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thePencaneta.PredictionHistory"
+             xmlns:view="clr-namespace:thePencaneta;assembly=thePencaneta"
+             xmlns:viewModel="clr-namespace:thePencaneta.ViewModels;assembly=thePencaneta"
+             Title="Predicciones">
+
+    <ContentPage.BindingContext>
+        <viewModel:CardDataHistoryViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+
+            <Label
+                VerticalOptions="Start"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                BackgroundColor="Transparent"
+                FontFamily="Maven"
+                HorizontalOptions="CenterAndExpand" 
+                Text="Mis predicciones"
+            />
+
+            <ListView x:Name="historyPrediction" SelectedItem="{Binding SelectedItem,Mode=TwoWay}" RowHeight="150" ItemsSource="{Binding CardDataCollection}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <view:CardView/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

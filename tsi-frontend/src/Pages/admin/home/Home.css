@@ -1,0 +1,155 @@
+.page-container-home-admin {
+  min-height: calc(100vh - 50px);
+}
+
+h1 {
+  color: black;
+}
+
+.cuadrantes {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+  align-items: center;
+  height: 790px;
+  flex-direction: row;
+}
+
+.subCuadranteUno {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 700px;
+  width: 300px;
+  flex-direction: column;
+}
+
+.subCuadranteDos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 700px;
+  width: 70%;
+}
+
+.cuadranteUno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: lightgray;
+  box-shadow: 7px 13px 37px #000;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.cuadranteDos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+  background-color: lightgray;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.cuadranteTres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px #000;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.cuadranteCuatro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px #000;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.cuadranteCinco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 1000px;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px #000;
+}
+
+@media screen and (max-width: 1440px) {
+  .cuadrantes {
+    align-items: flex-start;
+    height: 550px;
+  }
+  .cuadranteUno {
+    height: 65px;
+  }
+
+  .cuadranteDos {
+    height: 65px;
+  }
+
+  .cuadranteTres {
+    height: 65px;
+  }
+
+  .cuadranteCuatro {
+    height: 65px;
+  }
+
+  .cuadranteCinco {
+    height: 400px;
+    width: 650px;
+  }
+
+  .subCuadranteUno {
+    height: 500px;
+    padding-left: 1%;
+  }
+
+  .subCuadranteDos {
+    height: 500px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cuadranteUno,
+  .cuadranteDos,
+  .cuadranteTres,
+  .cuadranteCuatro {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cuadranteCinco {
+    height: 330px !important;
+    width: 436px !important;
+  }
+
+  .carousel-control-next {
+    padding-right: 10% !important;
+  }
+  .carousel-control-prev {
+    padding-left: 10% !important;
+  }
+}

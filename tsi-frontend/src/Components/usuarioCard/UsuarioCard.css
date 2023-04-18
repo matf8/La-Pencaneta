@@ -1,0 +1,38 @@
+.carta {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 10rem;
+  height: 8rem;
+  border-radius: 10px;
+}
+
+.carta-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardButton:hover {
+  cursor: pointer;
+}
+
+.perfil-ajeno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.seccion-perfil-ajeno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.imagen-perfil-ajeno {
+  width: 40%;
+  border-radius: 50%;
+}

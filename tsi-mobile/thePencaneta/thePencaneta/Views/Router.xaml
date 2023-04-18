@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="thePencaneta.Views.Router" xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <NavigationPage.TitleView>
+        <Label Text="¡Bienvenido!" FontFamily="Maven" TextColor="GhostWhite" FontSize="Title" HorizontalTextAlignment="Center"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Padding="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+            <Image Source="escudo.png" WidthRequest="250" HeightRequest="240" Margin="13,-40,0,0"/>
+
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Margin="0, 30, 0, 0">
+
+              <Button x:Name="signUp" Clicked="SignUp_Clicked" Text="Registrarse"                
+                HorizontalOptions="Center" IsVisible="False"/>
+
+              <Button
+                x:Name="login"
+                Clicked="Login_Clicked"
+                Text="INGRESAR"               
+                HorizontalOptions="Center"/>
+
+            </StackLayout> 
+          
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,22 @@
+.cartaPenca {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 14rem;
+  margin-left: 20px;
+  border-radius: 10px;
+  border-width: 5px;
+  /*     border-color: #7223cc; */
+}
+
+.cardButton:hover {
+  cursor: pointer;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+}

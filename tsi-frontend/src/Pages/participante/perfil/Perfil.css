@@ -1,0 +1,91 @@
+.page-container-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 50px);
+  margin-top: -60px;
+}
+
+.form-perfil {
+  height: 25rem;
+  padding-top: 20px;
+}
+
+.info-destacada {
+  color: white;
+}
+
+.info-field {
+  color: white;
+}
+
+.nombres-acciones {
+  color: white;
+}
+
+.perfil-titulo {
+  margin-top: 30px;
+}
+
+.contenidoPerfil {
+  width: 80%;
+  background-color: #ff8a17;
+  padding: 30px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px #000;
+  text-align: center;
+}
+
+.form-perfil {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.foto-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 380px;
+  width: 250px;
+}
+
+.datosPerfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 380px;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+}
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 380px;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+}
+
+.foto {
+  border-radius: 50%;
+  width: 70%;
+}
+
+@media screen and (max-width: 1440px) {
+  .page-container-perfil {
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenidoPerfil {
+    width: 100%;
+  }
+}

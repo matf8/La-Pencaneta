@@ -1,0 +1,49 @@
+.titulo-sidebar {
+    margin-top: 10px;
+    color: black;
+}
+
+.side-menu-logo-participante {
+    padding-top: 10px;
+    color: white;
+}
+
+.flechita-participante {
+    cursor: pointer;
+}
+
+.accion-sidebar-participante {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+.preview-pencas-participante {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    overflow: auto;
+}
+
+.preview-pencas-participante::-webkit-scrollbar {
+    display: none;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenido-preview {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.listado-posiciones {
+    display: flex;
+}

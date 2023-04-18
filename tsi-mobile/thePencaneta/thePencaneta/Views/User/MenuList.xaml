@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thePencaneta.MenuList"
+             xmlns:local="clr-namespace:thePencaneta"
+             Title="Menu flayout">
+
+    <StackLayout>
+        <ListView x:Name="lvDash" x:FieldModifier="public" Margin="10, 20, 0, 0" >
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MenuViewModel}">
+                    <local:MenuViewModel Title="Home" IconSource="home.png" TargetPage="{x:Type local:HomePage}"/>
+                    <local:MenuViewModel Title="Predicciones" IconSource="placeHolderFY.png" TargetPage="{x:Type local:PredictionModule}"/>
+                    <local:MenuViewModel Title="Info" IconSource="aus.png" TargetPage="{x:Type local:Reglas}"/>
+                    <local:MenuViewModel Title="Salir" IconSource="lgout.png" TargetPage="{x:Type local:Logout}"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid ColumnDefinitions="33, *" >
+                            <Image Source="{Binding IconSource}"/>
+                            <Label Grid.Column="1" Text="{Binding Title}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>                    
+            </ListView.ItemTemplate>           
+       </ListView>        
+    </StackLayout>
+
+
+
+</ContentPage>
+        
+        
+        

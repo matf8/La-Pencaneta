@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thePencaneta.CardView"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
+
+    <Frame IsClippedToBounds="True"
+         HasShadow="True"
+         BackgroundColor="White" >
+        <Frame.OutlineColor>
+            <OnPlatform x:TypeArguments="Color"
+                  Android="Gray"
+                  iOS="Gray"/>
+        </Frame.OutlineColor>
+        <Frame.Margin>
+            <OnPlatform x:TypeArguments="Thickness"
+                  Android="7" iOS="7"/>
+        </Frame.Margin>
+        <Frame.Padding>
+            <OnPlatform x:TypeArguments="Thickness"
+                  Android="5" iOS="5"/>
+        </Frame.Padding>
+        <StackLayout Orientation="Horizontal">
+
+            <Grid VerticalOptions="CenterAndExpand" Padding="0" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start" >
+                    <Label FontAttributes="Bold" Grid.Row="0" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="12" FontFamily="Maven" Text="{Binding HeadTitle, Mode=TwoWay}" TextColor="Gray"/>
+                    <Label FontAttributes="Bold" Grid.Row="0" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Center" FontSize="12" FontFamily="Maven" Text="{Binding HeadTitlePenca, Mode=TwoWay}" TextColor="Gray"/>
+
+                </StackLayout>
+                
+                <Grid Grid.Row="1">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">                        
+                        <controls:CircleImage Source="{Binding ImgEqA}" Grid.Row="2"  VerticalOptions="Start" HeightRequest="50" WidthRequest="80"/>
+                        <Label FontAttributes="Bold" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" FontSize="16" FontFamily="Maven" Text="{Binding HeadLines, Mode = TwoWay}" TextColor="Black"/>
+                        <controls:CircleImage Source="{Binding ImgEqB}" Grid.Row="2"  VerticalOptions="Start" HeightRequest="50" WidthRequest="90"/>
+                    </StackLayout>
+                </Grid>
+
+                <Label Text="{Binding HeadLinesDesc}" FontFamily="Maven" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="Start"/>
+
+
+                <Grid Grid.Row="2" BackgroundColor="Transparent" Padding="2">                  
+                                   
+                    <Label Text="{Binding HeadLineBot}" FontSize="Default" TextColor="Black" FontFamily="Maven" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand"/>
+
+                    <controls:CircleImage Source="{Binding PictureBotRanked}" Grid.Row="1" Grid.Column="0" VerticalOptions="Start" HeightRequest="27" WidthRequest="27" Margin="0,0,0,0"/>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </Frame>
+</ContentView>

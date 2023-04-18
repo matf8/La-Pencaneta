@@ -1,0 +1,13 @@
+﻿namespace backend.DataTypes
+{
+    public class DtShowUserPenca
+    {
+        public int Id { get; set; }
+        public string? Nombre { get; set; }
+        public string? Apellido { get; set; }
+        public int Puntaje { get; set; } = 0;
+
+        public int Ranking { get; set; } = 0;
+
+    }
+}

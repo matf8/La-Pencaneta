@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro");
+
+body {
+  /* background: rgb(9, 2, 93);
+  background: linear-gradient(90deg, rgba(9, 2, 93, 1) 0%, rgba(255, 158, 0, 1) 100%); */
+  background: rgb(0, 97, 255);
+  background: linear-gradient(90deg, rgba(0, 97, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
